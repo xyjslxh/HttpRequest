@@ -1,0 +1,36 @@
+/* 自定义样式 */
+
+/*div默认的左右间距  */
+.div-margin {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+label.error {
+	margin: 8px 0 0 0;
+	padding: 0;
+	height: 1%;
+	display: block;
+	color: #FF0000;
+}
+
+input.error {
+	background: #FBE3E4;
+	border-top: 1px solid #e1b2b3;
+	border-left: 1px solid #e1b2b3;
+	border-right: 1px solid #FBC2C4;
+	border-bottom: 1px solid #FBC2C4;
+}
+
+/*进度条*/
+.ui-progressbar {
+	position: relative;
+}
+
+.progress-label {
+	position: absolute;
+	left: 50%;
+	top: 4px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff;
+}
