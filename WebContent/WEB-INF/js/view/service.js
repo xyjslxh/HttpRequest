@@ -33,7 +33,7 @@ define([ 'backbone', 'jquery' ], function(Backbone, $) {
 		jssubmit : function() {
 			var _this = this;
 			$.ajax({
-				url : 'http://10.1.52.101:8080/HttpsServer/InternationalTrade/declare',
+				url : _this.$el.find('input[name=url]').val(),
 				type : 'post',
 				data : $(_this.$el.find('form')).serialize(),
 				dataType : 'JSON',

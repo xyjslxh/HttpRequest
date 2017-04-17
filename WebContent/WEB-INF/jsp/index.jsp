@@ -9,27 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>在线授权平台 V3.0</title>
 <link href="css/lc.css" rel="stylesheet">
-<link href="css/lib/zebra_dialog.css" rel="stylesheet">
 <link href="css/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/lib/bootstrap-datetimepicker.min.css" rel="stylesheet">
-<link href="css/dashboard.css" rel="stylesheet">
-<!-- Generic page styles -->
-<link rel="stylesheet" href="css/lib/jquery-file-upload/style.css">
-<!-- blueimp Gallery styles -->
-<link rel="stylesheet" href="css/lib/jquery-file-upload/blueimp-gallery.min.css">
-<!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
-<link rel="stylesheet" href="css/lib/jquery-file-upload/jquery.fileupload.css">
-<link rel="stylesheet" href="css/lib/jquery-file-upload/jquery.fileupload-ui.css">
-<!-- CSS adjustments for browsers with JavaScript disabled -->
-<noscript>
-	<link rel="stylesheet" href="css/lib/jquery-file-upload/jquery.fileupload-noscript.css">
-</noscript>
-<noscript>
-	<link rel="stylesheet" href="css/lib/jquery-file-upload/jquery.fileupload-ui-noscript.css">
-</noscript>
-<!--多选  -->
-<link rel="stylesheet" href="css/multi-select.css">
-<!-- <link rel="stylesheet" href="css/style.css"> -->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -50,7 +30,7 @@
 							<input name="url" type="text" class="form-control" />
 						</div>
 					</div>
-					<div class="form-group">
+<!-- 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="clientId">备案号</label>
 						<div class="col-sm-10">
 							<input name="clientId" type="text" class="form-control" />
@@ -67,7 +47,7 @@
 						<div class="col-sm-10">
 							<input name="messageType" type="text" class="form-control" />
 						</div>
-					</div>
+					</div> -->
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="messageText">报文</label>
 						<div class="col-sm-10">

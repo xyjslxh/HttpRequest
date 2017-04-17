@@ -139,7 +139,7 @@ public class HttpRequest {
 		// System.out.println(messageText);
 		// messageText = URLEncoder.encode(messageText, "UTF-8");
 		// 发送 POST 请求
-		String sr = HttpRequest.sendPost("http://localhost:8080/HttpsServer/InternationalTrade/declare",
+		String sr = HttpRequest.sendPost("https://10.1.52.101:8443/HttpsServer/InternationalTrade/declare",
 				"clientId=1&key=2&messageType=3&messageText=" + messageText);
 		System.out.println(sr);
 		JSONObject result = JSONObject.fromObject(sr);
