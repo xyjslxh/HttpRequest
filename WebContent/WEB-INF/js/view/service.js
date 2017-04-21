@@ -21,12 +21,15 @@ define([ 'backbone', 'jquery' ], function(Backbone, $) {
 				dataType : 'JSON',
 				success : function(result) {
 					$('#result').find('.panel-body').html('');
-					var str = "result=" + result.result + "</br>";
-					if (result.hasOwnProperty('errorCode')) {
-						str += "errorCode=" + result.errorCode + "</br>";
-					}
-					str += 'description=' + '<xmp>' + result.description + '</xmp>';
-					$('#result').find('.panel-body').html(str);
+					// var str = "result=" + result.result + "</br>";
+					// if (result.hasOwnProperty('errorCode')) {
+					// str += "errorCode=" + result.errorCode + "</br>";
+					// }
+					// str += 'description=' + '<xmp>' + result.description +
+					// '</xmp>';
+					// $('#result').find('.panel-body').html(str);
+					$('#result').find('.panel-body').html(
+							JSON.stringify(result));
 				}
 			});
 		},
@@ -43,7 +46,8 @@ define([ 'backbone', 'jquery' ], function(Backbone, $) {
 					if (result.hasOwnProperty('errorCode')) {
 						str += "errorCode=" + result.errorCode + "</br>";
 					}
-					str += 'description=' + '<xmp>' + result.description + '</xmp>';
+					str += 'description=' + '<xmp>' + result.description
+							+ '</xmp>';
 					$('#result').find('.panel-body').html(str);
 				}
 			});

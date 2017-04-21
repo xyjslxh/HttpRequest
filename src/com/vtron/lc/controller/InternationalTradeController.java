@@ -1,16 +1,14 @@
 package com.vtron.lc.controller;
 
-import net.sf.json.JSONObject;
-
-import org.dom4j.Document;
 import org.dom4j.DocumentException;
-import org.dom4j.DocumentHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.vtron.lc.common.HttpRequest;
+
+import net.sf.json.JSONObject;
 
 @Controller
 @RequestMapping("InternationalTrade")
@@ -31,8 +29,8 @@ public class InternationalTradeController {
 		 * "&key=" + key + "&messageType=" + messageType + "&messageText=" +
 		 * messageText);
 		 */
-		String sr = HttpRequest.sendPost(url, "messageText=" + messageText);
-		System.out.println(sr);
+		String[] paras = url.split("\\?");
+		String sr = HttpRequest.sendPost(paras[0], paras[1] + "&messageText=" + messageText);
 		JSONObject result = JSONObject.fromObject(sr);
 		// System.out.println(result.getString("description"));
 		// Document document =
